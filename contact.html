@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>Kon / CONTACT</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name=“robots” content=“noindex”>
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="shortcut icon" href="#" type="image/x-icon" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/6-1-8.css"> -->
+</head>
+<body>
+  
+  <!-- ヘッダー -->
+
+  <header>
+    <div class="header-inner">
+      
+      <div class="header_logo">
+        <a href="http://bn8978.xsrv.jp/level2/">
+          <img src="./images/common/logo-white.png" alt="Kon">
+        </a>
+      </div>
+      
+      <div class="header_hamburger hamburger js-hamburger u-mobile header-hamburger--white">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="header_nav js-drawer_nav">
+        <div class="nav_logo">
+          <a href="http://bn8978.xsrv.jp/level2/">
+            <img src="./images/common/logo-white.png" alt="Kon" class="open_logo">
+          </a>
+        </div>
+        <ul class="header-nav_list header-nav-list--white">
+          <li><a href="http://bn8978.xsrv.jp/level2/">top</a></li>
+          <li><a href="http://bn8978.xsrv.jp/level2/menu.html">メニュー</a></li>
+          <li><a href="http://bn8978.xsrv.jp/level2/contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- メインビュー -->
+
+    <section class="contact-mv">
+
+      <div class="contact-mv_title">
+        <h2>お問い合わせ</h2>
+      </div>
+
+
+      <div class="contact-mv_slider page-mv-slider">
+
+        <ul class="mv_slider">
+          <li><img src="./images/common/slider1.png" alt="お品書き1"></li>
+          <li><img src="./images/common/slider2.png" alt="お品書き2"></li>
+          <li><img src="./images/common/slider3.png" alt="お品書き3"></li>
+          <li><img src="./images/common/slider4.png" alt="お品書き4"></li>
+          <li><img src="./images/common/slider5.png" alt="お品書き5"></li>
+          <li><img src="./images/common/slider6.png" alt="お品書き6"></li>
+          <li><img src="./images/common/slider7.png" alt="お品書き7"></li>
+        </ul>
+          
+      </div>
+
+    </section>
+
+
+    <!-- 問い合わせインナー -->
+
+    <section class="contact-page_inner">
+
+      <h3 class="contact_title block-title">
+        <span>c</span>ontact
+      </h3>
+
+      <div class="contact-form">
+
+        <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
+          
+          <div class="contact-form_item">
+            <label>お名前<span>※</span></label>
+            <input type="text" name="name" placeholder="" value="">
+          </div>
+
+          <div class="contact-form_item">
+            <label>お電話番号<span>※</span></label>
+            <input type="text" name="tel" placeholder="" value="">
+          </div>
+
+          <div class="contact-form_item">
+            <label>メールアドレス</label>
+            <input type="text" name="email" placeholder="" value="">
+          </div>
+
+          <div class="contact-form_item contact-form_item--check">
+            <label>お問い合わせ項目<span>※</span></label>
+
+            <div class="checklist-item">
+              <input type="radio" name="item" value="ご予約"> 
+              <p>ご予約</p>
+            </div>
+            
+            <div class="checklist-item">
+              <input type="radio" name="item" value="その他">
+              <p>その他</p>
+            </div>
+              
+
+          </div>
+          
+          <div class="contact-form_item contact-form_textarea">
+            <label>お問い合わせ内容<span>※</span></label>
+            <textarea name="content" rows="5" placeholder=""></textarea>
+          </div>
+
+          <div class="contact-form_text">
+            <p><span>※</span>前日のご予約の方はお電話でお願いします。</p>
+            <p><span>※</span>ご予約希望の方は日にちと人数のご記入をお願いします。</p>
+          </div>
+
+          <button type="submit" class="contact_btn btn">
+            送信
+          </button>
+
+
+
+
+        </form>
+        
+
+
+
+      </div>
+        
+    </section>
+
+
+
+
+
+
+  </main>
+
+
+
+  <!-- フッター -->
+
+  <footer>
+    
+    <div class="footer-wrapper">
+      
+      <div class="footer_logo">
+        <a href="http://bn8978.xsrv.jp/level2/">
+          <img src="./images/common/logo-white.png" alt="Kon">
+        </a>
+      </div>
+      
+      <div class="footer_inner inner">
+        
+        <table class="footer-info_items">
+          
+          <tr class="footer-info_item">
+            <th>店名</th>
+            <td>Kon</td>
+          </tr>
+          
+          <tr class="footer-info_item">
+            <th>住所</th>
+            <td>熊本県熊本市城下町1-1</td>
+          </tr>
+          
+          <tr class="footer-info_item">
+            <th>電話番号</th>
+            <td>096-111-1111</td>
+          </tr>
+          
+          <tr class="footer-info_item">
+            <th>アクセス</th>
+            <td>熊本駅より市電で城下町へ城下町<br class="u-mobile">降車後<br class="u-desktop">徒歩3分</td>
+          </tr>
+          
+          <tr class="footer-info_item">
+            <th>営業時間</th>
+            <td>18:00〜23:00</td>
+          </tr>
+          
+          <tr class="footer-info_item">
+            <th>定休日</th>
+            <td>火曜日</td>
+          </tr>
+          
+        </table>
+        
+        <div class="footer-info_map">
+          <img src="./images/common/map-sp.png" alt="地図" class="u-mobile">
+          <img src="./images/common/map.png" alt="地図" class="u-desktop">
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </footer>
+    
+
+  <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--自作のJS-->
+  <!-- <script src="js/6-1-8.js"></script> -->
+</body>
+</html>
